@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOX Conference Izloze</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="max-w-xl mx-auto p-6 bg-white mt-10 rounded shadow">
+        <h1 class="text-2xl font-bold mb-4 text-center">VOX Conference Izloze</h1>
+        <form id="entryForm" class="space-y-4">
+            <input type="text" id="firstName" placeholder="Vārds" class="input" required>
+            <input type="text" id="lastName" placeholder="Uzvārds" class="input" required>
+            <input type="email" id="email" placeholder="E-pasts" class="input" required>
+            <input type="tel" id="phone" placeholder="Telefons" class="input" required>
+            <button type="submit" class="btn">Pieteikties</button>
+        </form>
+        <hr class="my-6">
+        <button id="drawBtn" class="btn bg-green-600 hover:bg-green-700">Izlozēt 3 uzvarētājus</button>
+        <ul id="winnersList" class="mt-4 list-disc pl-5 text-lg"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
